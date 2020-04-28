@@ -27,7 +27,7 @@ function strcmp()
    	//input from text field
     //value from input drop down options 
 
-    for(i=0;i<java_fun.length;i++)  
+    for(i=0;i<java.length;i++)  
     {
         if(word===arr[i])
         {
@@ -41,7 +41,7 @@ function strcmp()
 
     if(index!=-1){      //output   
     	document.alet(arrOutDisplay[index]);  
-		document.getElementById('output-html').innerHTML=arrOutDisplay[index]; //output
+		document.getElementById('output-html').innerHTML='<h2>'+arrOutDisplay[index]+'<h2>; //output
 	}	
 
 
