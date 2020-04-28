@@ -1,23 +1,27 @@
-var Java = ["fun()","hello"]; //function list 
-var Python = ["function()","hi"]; //coresponing function list
-var word = document.getElementById("input-text").value;
-var arrInp = document.getElementById("lang-select").value;
-var arrOut = document.getElementById("output-dropdown").value;
-var arrOutDisplay;
-if(arrInp=="Java"){
-	arr=Java;
-}
-else{
-	arr = Python;
-}
-if(arrOut=="Java"){
-	arrOutDisplay=Java;
-}
-else{
-	arrOutDisplay = Python;
-}
+
 function strcmp()
-{
+{	
+	document.alert("working");
+	console.log("hello");
+	var Java = ["fun()","hello"]; //function list 
+	var Python = ["function()","hi"]; //coresponing function list
+	var arr;
+	var word = document.getElementById("input-text").value;
+	var arrInp = document.getElementById("lang-select").value;
+	var arrOut = document.getElementById("output-dropdown").value;
+	var arrOutDisplay;
+	if(arrInp=="Java"){
+		arr=Java;
+	}
+	else{
+		arr = Python;
+	}
+	if(arrOut=="Java"){
+		arrOutDisplay=Java;
+	}
+	else{
+		arrOutDisplay = Python;
+	}
     var i;
     var index=-1;
    	//input from text field
@@ -37,8 +41,7 @@ function strcmp()
 
     if(index!=-1){      //output   
     	document.alet(arrOutDisplay[index]);  
-		var para = document.querySelector('#output-html'); //output
-		para.innerHTML='<h2>this works</h2>';
+		document.getElementById('output-html').innerHTML=arrOutDisplay[index]; //output
 	}	
 
 
