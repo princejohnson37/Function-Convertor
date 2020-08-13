@@ -1,7 +1,7 @@
 function strcmp()
 {
-	var Java = ["fun()","hello"]; //function list 
-	var Python = ["function()","hi"]; //coresponing function list
+	var Java = ["fun()","hello","toString()","System.out.print()","this","nextInt()"]; //function list 
+	var Python = ["function()","hi","str()","print()","self","int(input())"]; //coresponing function list
 	var word = document.getElementById("input-text").value;
 	var arrInp = document.getElementById("lang-select").value;
 	var arrOut = document.getElementById("output-dropdown").value;
